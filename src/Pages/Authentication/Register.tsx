@@ -79,7 +79,7 @@ export const Register = () => {
         if(user){
             navigate('/');
         }
-    },[]);
+    },[user,navigate]);
 
 
     return (
