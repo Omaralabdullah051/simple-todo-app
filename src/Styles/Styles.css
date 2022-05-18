@@ -53,4 +53,27 @@
     background-color: darkcyan;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.task-container{
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: darkcyan;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }

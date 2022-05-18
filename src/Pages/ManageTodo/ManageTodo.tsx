@@ -1,5 +1,6 @@
 import React, { useRef } from "react"
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import '../../Styles/Styles.css';
 
 export const ManageTodo = () => {
@@ -23,6 +24,7 @@ export const ManageTodo = () => {
                     const data = await res.json();
                     if (data.success) {
                         e.target.reset();
+                        toast.success("Task added successfully");
                     }
                     else {
                     }
@@ -41,7 +43,7 @@ export const ManageTodo = () => {
                     <input className="first-input" ref={taskRef} type="text" name="taskName" id="taskName" placeholder='Task Name' autoComplete='off' required />
                      <textarea placeholder="Add a shop description" ref={descriptionRef} name="taskDescription" id="taskDescription"></textarea>
                     <input className="form-submit" type="submit" value="ADD" />
-                    <button className="btn"><Link className="link" to="viewtask">View your task</Link></button>
+                    <button className="btn"><Link className="link" to="/viewtask">View your task</Link></button>
                 </form>
         </div>
     )
