@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# TodoApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Livesite link: [TodoApp](https://simple-todo-app-a1a6f.web.app/).
 
-## Available Scripts
+## Overview Of TodoApp:
 
-In the project directory, you can run:
+- I just focused on the features & functionalities to implement in the overall project.
 
-### `npm start`
+- I don't use any css framework & don't implement a better style due to the stortage time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- But I maintain a complete functional approaches with typeScript that made the website more flexible.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Overall project specification:
 
-### `npm test`
+In the overall project, you will found:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- I implemented authentication system to identify users (Email-password auth).
 
-### `npm run build`
+- I protected the Checkout page with help of authentication process.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- I added many features and services for managing todos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## List of teachnologies & functionality that I used and implemented in my project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the overall project, you will found:
 
-### `npm run eject`
+- I used typeScript in my overall client project.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- I used React Router DOM to set up Routes in my overall project.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- I used React Query to cache and refetch data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- I implemented firebase & React Firebase Hooks to simplify my application's authentication system.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- I installed React toastify to add some toast.

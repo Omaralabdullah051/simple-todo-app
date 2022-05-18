@@ -18,7 +18,7 @@ interface TaskProps<T> {
         const completedTodo = {completed: true};
         (async () => {
             try {
-                const res = await fetch(`http://localhost:5000/completetask?id=${id}`, {
+                const res = await fetch(`https://morning-fjord-49700.herokuapp.com/completetask?id=${id}`, {
                     method: "PUT",
                     headers: {
                         'Content-type': 'application/json'
@@ -45,7 +45,7 @@ interface TaskProps<T> {
            if(proceed){
             (async () => {
                 try {
-                    const res = await fetch(`http://localhost:5000/deletetask?id=${id}`, {
+                    const res = await fetch(`https://morning-fjord-49700.herokuapp.com/deletetask?id=${id}`, {
                         method: "DELETE",
                         headers: {
                             'Content-type': 'application/json'

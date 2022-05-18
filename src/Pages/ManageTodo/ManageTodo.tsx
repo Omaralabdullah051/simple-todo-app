@@ -14,7 +14,7 @@ export const ManageTodo = () => {
             const todo = {task, description};
             (async () => {
                 try {
-                    const res = await fetch('http://localhost:5000/addtask', {
+                    const res = await fetch('https://morning-fjord-49700.herokuapp.com/addtask', {
                         method: "POST",
                         headers: {
                             'Content-type': 'application/json'

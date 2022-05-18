@@ -10,7 +10,7 @@ interface TodosType<T> {
 
 export const ViewTask = ()=> {
 
-    const {data:todos,isLoading,refetch} = useQuery('todo', () => fetch('http://localhost:5000/viewtask').then(res=> res.json()))
+    const {data:todos,isLoading,refetch} = useQuery('todo', () => fetch('https://morning-fjord-49700.herokuapp.com/viewtask').then(res=> res.json()))
 
     if(isLoading){
         <p>Loading.....</p>
