@@ -1,0 +1,37 @@
+.input-group input {
+    width: 385px;
+    height: 40px;
+    border: 1px solid #95A0A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 5px;
+    display: block;
+    margin: 5px auto;
+}
+
+.first-input{
+    margin-bottom: 10px;
+}
+
+.form-submit {
+    background-color: darkcyan;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login{
+    color: blue;
+}
+
+.error{
+    color: red;
+    margin: 0 auto;
+}
+
+#password-error{
+    font-size: 10px;
+}
