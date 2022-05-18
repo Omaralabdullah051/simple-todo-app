@@ -26,7 +26,6 @@ interface TaskProps<T> {
                     body: JSON.stringify(completedTodo)
                 });
                 const data = await res.json();
-                console.log(data);
                 if (data.success) {
                     toast.success("Task is marked as completed");
                     refetch();
@@ -40,11 +39,40 @@ interface TaskProps<T> {
             }
         })();
 }
+
+    const handleDelete = (id: string) => {
+           const proceed = window.confirm("Are you sure want to delete the task?");
+           if(proceed){
+            (async () => {
+                try {
+                    const res = await fetch(`http://localhost:5000/deletetask?id=${id}`, {
+                        method: "DELETE",
+                        headers: {
+                            'Content-type': 'application/json'
+                        }
+                    });
+                    const data = await res.json();
+                    if (data.success) {
+                        toast.success("Task is deleted successfully");
+                        refetch();
+                    }
+                    else {
+                    }
+    
+                }
+                catch (err: any) {
+                    console.error(err.message);
+                }
+            })();
+           }
+    }
+
      return (
          <div className="task-container">
              <h4>{task}</h4>
              <p>{description}</p>
              {completed ? "Task is completed" : <button onClick={() => handleOnClick(_id)} className="button">Complete</button>}
+             <button className="button" onClick={() => handleDelete(_id)}>Delete</button>
           </div>
      )
  }
